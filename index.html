@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 07</title>
+    <link rel="stylesheet" href="/assets/style/form-style.css">
+</head>
+<body>
+    <form> 
+       <div class="flexbox-form-element">
+         <Fieldset>
+            <legend>Persomal info</legend>
+             <div class="form-element">
+            <label for="firstName">First Name</label> 
+            <input placeholder="First Name" id="firstName" type="text">
+        </div>
+        
+        <div class="form-element">
+            <label for="lastName">Last Name</label> 
+            <input placeholder="Last Name" id="lastName" type="text">
+        </div>
+        <div class="form-element">
+            <label for="Birthday">Birthday</label>
+            <input id="Birthday" type="date">
+        </div>
+         <div class="form-element">
+            <h4>Gender</h4>
+            <label for="Gender">Male</label>
+            <input id="Gender" type="radio" name="Gender">
+            <label for="Gender">Female</label>
+            <input id="Gender" type="radio" name="Gender">
+        </div>
+         <div class="form-element">
+            <label for="Drive-experience">Drive experience</label>
+            <select id="Drive-experience" name="expirience">
+                <option value="---">---</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+            </select>
+        </div>
+        </Fieldset>
+        <fieldset>
+            <legend>Contacts</legend>
+            <div class="form-element">
+            <label for="Email">Email</label>
+            <input placeholder="Email" id="Email" type="email">
+        </div>
+        <div class="form-element">
+            <label for="Phone">Phone</label>
+            <input placeholder="Phone" id="Phone" type="number">
+        </div>
+        <div class="form-element">
+            <label for="Adress">Adress</label>
+            <textarea  id="Adress" rows="3" cols="40"></textarea>
+        </div>
+        </fieldset>
+       <fieldset>
+        <legend>Car info</legend>
+         <div class="form-element">
+            <label for="Brand">Brand</label>
+            <select id="Brand" name="brandnd">
+                <option value="---">---</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+            </select>
+        </div>
+        <div class="form-element">
+            <label for="Model">Model</label>
+            <select id="Model" name="model" >
+            <option value="---">---</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            </select>
+        </div>
+        <div class="form-element">
+            <label for="Used">Used</label>
+            <input id="Used" type="checkbox">
+        </div>
+        <div class="form-element">
+            <h4>Color</h4>
+            <label for="Color">red</label>
+            <input id="Color" type="radio" name="Color">
+            <label for="Color">bue</label>
+            <input id="Color" type="radio" name="Color">
+            <label for="Color">grin</label>
+            <input id="Color" type="radio" name="Color">
+            <label for="Color">black</label>
+            <input id="Color" type="radio" name="Color">
+            <label for="Color">white</label>
+            <input id="Color" type="radio" name="Color">
+        </div>
+        <div class="form-element">
+            <label for="Price">Price</label>
+            <input id="Price" type="range" min="0" max="50000"
+            step="5000"
+            list="money">
+            <datalist id="money">
+                <option value="0" label="0"></option>
+                <option value="5000" label="5000"></option>
+                <option value="10000" label="10000"></option>
+                <option value="15000" label="15000"></option>
+                <option value="20000" label="20000"></option>
+                <option value="25000" label="25000"></option>
+                <option value="30000" label="30000"></option>
+                <option value="35000" label="35000"></option>
+                <option value="40000" label="40000"></option>
+                <option value="45000" label="45000"></option>
+                <option value="50000" label="50000"></option>
+            </datalist>
+        </div>
+       </fieldset>
+       </div>
+       <div class="flexbox-form-btn">
+        <button type="reset">cansel</button>
+        <button type="submit">ok</button>
+    </div>
+    </form>
+    
+    
+</body>
+</html>
