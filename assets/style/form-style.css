@@ -4,122 +4,55 @@
   margin: 0;
   padding: 0;
 }
-
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  background: linear-gradient(135deg, #d7e9ff, #f7f9fc);
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  margin: 20px;
 }
 
 /* === Основна форма === */
 form {
-  background: #fff;
-  padding: 30px 40px;
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  max-width: 90vw;
+  padding-top: 20px;
+  width: 70vw;
 }
-.flexbox-form-element{
+.flexbox-form-element {
   display: flex;
-  gap: 10px;
+  gap: 1px;
   margin-bottom: 10px;
 }
-
-/* === Групи полів === */
-fieldset {
-  border: 1px solid #c7d8eb;
-  border-radius: 10px;
-  padding: 20px;
-}
-
-legend {
-  font-weight: 600;
-  color: #0056b3;
-  padding: 0 10px;
-}
-
-/* === Кожен елемент форми === */
-.form-element {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  margin-bottom: 5px;
-}
-/* === Вирівнювання кнопок === */
 .flexbox-form-btn{
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 20px;
 }
-
-/* === Текст і поля === */
-label {
-  font-size: 14px;
-  color: #333;
+/* === Групи полів === */
+fieldset {
+  padding: 20px;
 }
-
-input,
-select,
-textarea {
-  font-size: 14px;
-  padding: 8px 10px;
-  border: 1px solid #cbd6e2;
-  border-radius: 6px;
-  transition: 0.2s;
+/* === Кожен елемент форми === */
+.form-element {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
 }
-
-input:focus,
-select:focus,
-textarea:focus {
-  border-color: #0078d7;
-  box-shadow: 0 0 4px rgba(0, 120, 215, 0.3);
-  outline: none;
+.form-element-price{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
 }
-
-/* === Radio і Checkbox у ряд === */
-.form-element h4 {
-  font-size: 14px;
-  margin-bottom: 5px;
+.personal-info{
+    width: 250px;
 }
-
-.form-element input[type="radio"],
-.form-element input[type="checkbox"] {
-  margin-right: 6px;
-  accent-color: #0078d7;
+.contact{
+    width: 228px;
+    gap: 10px;
 }
-
-.form-element label + input[type="radio"],
-.form-element label + input[type="checkbox"] {
-  margin-left: 10px;
+.car-info>select{
+    width: 110px;
 }
-
-/* === Кнопки === */
-button {
-  padding: 10px 20px;
-  font-size: 15px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-button[type="submit"] {
-  background-color: #0078d7;
-  color: #fff;
-}
-
-button[type="reset"] {
-  background-color: #ccc;
-  color: #222;
-}
-
-button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-}
-button + button {
-  margin-left: 10px;
+.car-info-color{
+    gap: 5px;
 }
